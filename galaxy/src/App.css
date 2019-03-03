@@ -1,33 +1,55 @@
-.App {
-  text-align: center;
+.galaxy {
+  position: relative;
+  transform: rotateX(75deg);
+  transform-style: preserve-3d;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.orbit {
+  margin: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 21em;
+  height: 21em;
+  border-radius: 50%;
+  animation-name: spin;
+  transform-style: preserve-3d;
+  animation-duration: 7200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.planet {
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+  animation-duration: 7200ms;
+  animation-name: planetAnim;
+  animation-duration: 7200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
+
   to {
-    transform: rotate(360deg);
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes planetAnim {
+  0% {
+    transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
   }
 }
