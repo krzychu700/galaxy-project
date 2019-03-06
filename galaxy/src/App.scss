@@ -23,19 +23,6 @@ body {
   animation-timing-function: linear;
 }
 
-.orbit::before {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, .4);
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: -10%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotateX(180deg) rotateY(180deg);
-}
-
 .pos {
   position: absolute;
   left: -5%;
