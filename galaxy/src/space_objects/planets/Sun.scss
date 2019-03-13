@@ -1,0 +1,26 @@
+.sunPos {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+
+.sun {
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+  transform-style: preserve-3d;
+  transform: rotateX(-90deg);
+  // background: url(https://web.opendrive.com/api/v1/download/file.json/NTlfMTQ1MTkzNDhf?inline=1);
+  background-size: cover;
+  // background-image: url("/images/sun.png");
+  border-radius: 50%;
+}
+
+@keyframes spinA {
+  to {
+    background-position: 0 100%
+  }
+
+}

@@ -1,0 +1,62 @@
+@import "./_variables";
+@import "./_animations";
+
+.orbitMercuryPosition {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+
+.orbitMercury {
+  border: 1px solid rgba(252, 249, 249, 0.8);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation-name: orbitAnim;
+  transform-style: preserve-3d;
+  animation-duration: 7200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.posMercury {
+  position: absolute;
+  left: -3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 7200ms;
+  animation-name: planetAnim;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+}
+
+.planetMercury {
+  width: 40px;
+  height: 40px;
+  // background: url(https://web.opendrive.com/api/v1/download/file.json/NTlfMTQ1MTkzNDhf?inline=1);
+  background-color: red;
+  background-size: cover;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  animation: rotateAnim;
+  animation-duration: 3300ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.planetMercury::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  width: 40px;
+  height: 40px;
+  animation-name: shadows;
+  animation-duration: 7200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

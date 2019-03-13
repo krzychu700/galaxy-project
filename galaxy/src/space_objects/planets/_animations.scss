@@ -1,0 +1,72 @@
+@keyframes orbitAnim {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes rotateAnim {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 200%;
+  }
+}
+
+@keyframes shadows {
+  0% {
+    box-shadow: inset 20px 0 20px $shadow-color, inset -140px -70px 100px #000;
+    ;
+  }
+
+  25% {
+    box-shadow: inset 0 -20px 15px $shadow-color;
+  }
+
+  50% {
+    box-shadow: inset -20px 0 15px $shadow-color;
+  }
+
+  75% {
+    box-shadow: inset 0 15px 15px $shadow-color;
+  }
+
+  100% {
+    box-shadow: inset 20px 0 20px $shadow-color;
+  }
+}
+
+@keyframes moonOrbitAnim {
+  0% {
+    transform: rotateX(90deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(90deg) rotateZ(-360deg);
+  }
+}
+
+@keyframes planetAnim {
+  0% {
+    transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+@keyframes moonAnim {
+  0% {
+    transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+  }
+}

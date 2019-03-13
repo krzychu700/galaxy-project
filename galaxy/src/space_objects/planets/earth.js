@@ -1,14 +1,22 @@
 import React from "react";
+import "./Earth.scss";
 
 export default class Earth extends React.Component {
-  render() {
+  render(props) {
+    const orbitSize = {
+      height: `${this.props.earth.orbit}px`,
+      width: `${this.props.earth.orbit}px`
+    };
+
     return (
-      <div id="Earth" className="orbit">
-        <div className="pos">
-          <div className="planet">
-            <div className="moonOrbit">
-              <div className="moonPos">
-                <div className="moon" />
+      <div id="Earth" className="orbitEarthPosition">
+        <div className="orbitEarth" style={orbitSize}>
+          <div className="posEarth">
+            <div className="planetEarth ">
+              <div className="moonOrbitEarth">
+                <div className="moonPosEarth">
+                  <div className="moonEarth" />
+                </div>
               </div>
             </div>
           </div>
