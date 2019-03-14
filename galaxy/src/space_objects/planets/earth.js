@@ -4,8 +4,8 @@ import "./Earth.scss";
 export default class Earth extends React.Component {
   render(props) {
     const orbitSize = {
-      height: `${this.props.earth.orbit}px`,
-      width: `${this.props.earth.orbit}px`
+      height: `${this.props.earth}px`,
+      width: `${this.props.earth}px`
     };
 
     return (

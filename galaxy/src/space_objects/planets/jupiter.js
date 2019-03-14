@@ -4,8 +4,8 @@ import "./Jupiter.scss";
 export default class Jupiter extends React.Component {
   render(props) {
     const orbitSize = {
-      height: `${this.props.jupiter.orbit}px`,
-      width: `${this.props.jupiter.orbit}px`
+      height: `${this.props.jupiter}px`,
+      width: `${this.props.jupiter}px`
     };
 
     return (

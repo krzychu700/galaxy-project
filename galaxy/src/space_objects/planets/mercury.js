@@ -4,8 +4,8 @@ import "./Mercury.scss";
 export default class Mercury extends React.Component {
   render(props) {
     const orbitSize = {
-      height: `${this.props.mercury.orbit}px`,
-      width: `${this.props.mercury.orbit}px`
+      height: `${this.props.mercury}px`,
+      width: `${this.props.mercury}px`
     };
 
     return (

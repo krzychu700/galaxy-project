@@ -4,8 +4,8 @@ import "./Mars.scss";
 export default class Mars extends React.Component {
   render(props) {
     const orbitSize = {
-      height: `${this.props.mars.orbit}px`,
-      width: `${this.props.mars.orbit}px`
+      height: `${this.props.mars}px`,
+      width: `${this.props.mars}px`
     };
 
     return (

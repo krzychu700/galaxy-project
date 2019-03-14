@@ -4,8 +4,8 @@ import "./Neptune.scss";
 export default class Neptune extends React.Component {
   render(props) {
     const orbitSize = {
-      height: `${this.props.neptune.orbit}px`,
-      width: `${this.props.neptune.orbit}px`
+      height: `${this.props.neptune}px`,
+      width: `${this.props.neptune}px`
     };
 
     return (

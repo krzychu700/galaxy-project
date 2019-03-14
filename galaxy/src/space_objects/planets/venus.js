@@ -4,8 +4,8 @@ import "./Venus.scss";
 export default class Venus extends React.Component {
   render(props) {
     const orbitSize = {
-      height: `${this.props.venus.orbit}px`,
-      width: `${this.props.venus.orbit}px`
+      height: `${this.props.venus}px`,
+      width: `${this.props.venus}px`
     };
 
     return (

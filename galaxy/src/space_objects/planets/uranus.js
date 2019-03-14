@@ -4,8 +4,8 @@ import "./Uranus.scss";
 export default class Uranus extends React.Component {
   render(props) {
     const orbitSize = {
-      height: `${this.props.uranus.orbit}px`,
-      width: `${this.props.uranus.orbit}px`
+      height: `${this.props.uranus}px`,
+      width: `${this.props.uranus}px`
     };
 
     return (

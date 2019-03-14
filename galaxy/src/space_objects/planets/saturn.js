@@ -4,8 +4,8 @@ import "./Saturn.scss";
 export default class Saturn extends React.Component {
   render(props) {
     const orbitSize = {
-      height: `${this.props.saturn.orbit}px`,
-      width: `${this.props.saturn.orbit}px`
+      height: `${this.props.saturn  }px`,
+      width: `${this.props.saturn  }px`
     };
 
     return (

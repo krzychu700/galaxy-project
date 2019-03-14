@@ -9,40 +9,14 @@ import Uranus from "../src/space_objects/planets/uranus";
 import Neptune from "../src/space_objects/planets/neptune";
 import Pluto from "../src/space_objects/planets/pluto";
 import Sun from "../src/space_objects/planets/sun";
+import Objects from "./objects.json";
 import "./App.scss";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      mercury: {
-        orbit: 300
-      },
-      venus: {
-        orbit: 450
-      },
-      earth: {
-        orbit: 600
-      },
-      mars: {
-        orbit: 750
-      },
-      jupiter: {
-        orbit: 850
-      },
-      saturn: {
-        orbit: 950
-      },
-      uranus: {
-        orbit: 1000
-      },
-      neptune: {
-        orbit: 1100
-      },
-      pluto: {
-        orbit: 1150,
-        orbitTime: 10300
-      }
+      galaxyObects: Objects
     };
   }
 
@@ -50,15 +24,15 @@ class App extends Component {
     return (
       <div className="galaxy">
         <Sun />
-        <Mercury mercury={this.state.mercury} />
-        <Venus venus={this.state.venus} />
-        <Earth earth={this.state.earth} />
-        <Mars mars={this.state.mars} />
-        <Jupiter jupiter={this.state.jupiter} />
-        <Saturn saturn={this.state.saturn} />
-        <Uranus uranus={this.state.uranus} />
-        <Neptune neptune={this.state.neptune} />
-        <Pluto pluto={this.state.pluto} />
+        <Mercury mercury={this.state.galaxyObects.MERCURY.distance_from_sun} />
+        <Venus venus={this.state.galaxyObects.VENUS.distance_from_sun} />
+        <Earth earth={this.state.galaxyObects.EARTH.distance_from_sun} />
+        <Mars mars={this.state.galaxyObects.MARS.distance_from_sun} />
+        <Jupiter jupiter={this.state.galaxyObects.JUPITER.distance_from_sun} />
+        <Saturn saturn={this.state.galaxyObects.SATURN.distance_from_sun} />
+        <Uranus uranus={this.state.galaxyObects.URANUS.distance_from_sun} />
+        <Neptune neptune={this.state.galaxyObects.NEPTUNE.distance_from_sun} />
+        <Pluto pluto={this.state.galaxyObects.PLUTO.distance_from_sun} />
       </div>
     );
   }
